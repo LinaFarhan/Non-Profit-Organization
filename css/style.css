@@ -1,0 +1,526 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 160px;  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+  font-size:30px;
+  font-weight: bold;
+  direction: rtl;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  
+}
+/* الشعار */
+.logo img {
+  height: 45px;
+}
+
+/* الروابط */
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+   gap: 30px;
+  direction: rtl;
+}
+.nav-item {
+  position: relative;
+}
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle i {
+  margin-right: 5px;
+  color: #080707;
+}
+
+
+ 
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+  min-width: 180px;
+  padding: 10px 0;
+  z-index: 999;
+  list-style-type: none;  
+ display: none;
+ 
+  flex-direction: column;  
+  gap: 10px;
+
+   
+}
+
+
+.dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.dropdown.active {
+  display: block;
+}
+
+
+.dropdown li a:hover {
+  background-color: #f2f2f2;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d40000;
+}
+
+ 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang {
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.search, .notifications {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #003366;
+  cursor: pointer;
+}
+
+ .donate {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+    transition: transform 0.3s ease;
+} 
+ 
+
+.heart-btn:hover {
+  transform: scale(1.1);
+}
+
+
+ 
+ 
+.hero {
+  height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-imag{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  margin-bottom: 0px;
+  
+
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 2;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  z-index: 3;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin-top: 20%;
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-bottom: 20%;
+
+}
+
+.more-button {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+.more-button:hover{
+ background-color: #e03d20;
+}
+.welcome-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  animation: slideUpRight 0.4s ease-out;
+  flex-wrap: wrap;
+}
+
+ 
+@keyframes slideUpRight {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.message-text {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.welcome-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.welcome-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  direction: rtl;
+}
+
+#acceptBtn {
+  background-color: red;
+  color: white;
+}
+
+#dismissBtn {
+  background-color: #eee;
+  color: #333;
+}
+
+.welcome-buttons button:hover {
+  transform: scale(1.05);
+}
+
+
+.back-button {
+ 
+  position: fixed;
+  bottom: 30px;
+  left:10px;
+  background-color: var(--clr-primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+  .footer-map-toggle {
+  background-color: rgb(240, 230, 230);
+  color: rgb(197, 8, 8);
+  text-align: center;
+  padding: 30px 20px;
+  font-weight: bold;
+  font-family: var(--font-main);
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  height:10%;
+  z-index: 1000;
+ 
+}
+ 
+.footer-info p {
+  margin: 6px 0;
+  font-size: 14px;
+  
+}
+
+.footer-map-toggle button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.footer-map-toggle img {
+  width: 32px;
+  transition: transform 0.3s ease;
+}
+
+.footer-map-toggle img:hover {
+  transform: scale(1.1);
+}
+
+
+#map-toggle-btn {
+ 
+  font-size: 16px;
+  
+  color: rgb(170, 10, 10);
+  border: none;
+ opacity: 100%;
+  transition: background 0.3s ease;
+}
+#map-icon {
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+  margin-bottom: 0px;      
+}
+#map-icon:hover {
+  transform: scale(1.1);  
+}
+
+ 
+.footer-map-toggle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(240, 230, 230);
+  color: rgb(216, 21, 21);
+  font-weight: bold;
+  font-family: var(--font-main);
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  z-index: 1000;
+}
+
+ 
+.map-icon-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ .footer-info {
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+ #map-icon {
+  width: 32px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+#map-icon:hover {
+  transform: scale(1.1);
+}
+@keyframes fadeInMap {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#map-section {
+  animation: fadeInMap 0.4s ease-in-out;
+}
+
+
+ 
+.floating-back-btn:hover {
+  background-color: var(--clr-accent);
+  transform: scale(1.05);
+}
+
+ 
+
+#pageOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  pointer-events: all;
+}
+ 
+
+
+/* responsiv */
+/* شاشات كبيرة */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 25px 60px;
+  }
+
+  .hero-content {
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+/* شاشات التابلت */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-content {
+    margin: 15% auto;
+    padding: 0 25px;
+  }
+
+  .donate, .more-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* شاشات الجوال */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-actions {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    margin: 10% auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .more-button {
+    width: 100%;
+  }
+
+  .donate {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* شاشات صغيرة جدًا */
+@media (max-width: 480px) {
+  .logo img {
+    height: 35px;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-toggle {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .more-button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
