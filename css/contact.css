@@ -1,0 +1,155 @@
+.contact-section {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: darkred;
+}
+.red-cross-image {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.red-cross-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.red-cross-image img {
+  animation: fadePulse 2s ease-in-out forwards;
+}
+
+@keyframes fadePulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+ 
+
+
+}
+
+.footer-map-toggle {
+ background-color: rgb(240, 230, 230);
+  color: rgb(216, 21, 21);
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+   margin-top: 50%;
+}
+
+/* الشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .red-cross-image {
+    padding: 20px 10px;
+  }
+
+  .red-cross-image img {
+    border-radius: 6px;
+  }
+}
+
+/* الأجهزة اللوحية */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+  }
+
+  .contact-info {
+    font-size: 17px;
+  }
+
+  .red-cross-image img {
+    max-width: 90%;
+  }
+}
+
+/* الشاشات الكبيرة */
+@media (min-width: 769px) {
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1;
+  }
+}
