@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الدخول|Non-Profit organization </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body> 
+ 
+  <header>
+<div class="form-group">
+  <label>
+    <input type="checkbox" id="theme-checkbox">
+    أُفضل الوضع الداكن
+  </label>
+</div>
+  </header>
+  <main>
+<div class="login-box">
+  <img src=" /assets/images/logo.png" alt="IFRC Logo" class="logo">
+
+
+  <h2>تسجيل الدخول إلى حسابك</h2>
+   <form action="" id="login-form" method="">
+        <div class="form-group">
+   <label for="email-phone">البريد الإلكتروني أو رقم الهاتف</label>
+    <input type="text" id="email_phone" placeholder="(exampl@gmail or 7758006554)ادخل الايميل او التلفون" required value=""   />
+    <span class="error-msg" id="email-error"></span>
+ 
+        </div>
+         
+        <div class="form-group">
+  <label for="password">كلمة المرور</label>
+    <input type="password" id="password"  placeholder="••••••••"   required value=""  />
+    <span class="error-msg" id="password-error"></span>
+
+    
+        </div>
+         <div class="options">
+    <a href="#">هل نسيت كلمة المرور؟</a>
+    <label><input type="checkbox"> حفظ كلمة المرور</label>
+  </div>
+
+  <button   type="submit"class="loginbtn">تسجيل الدخول</button>
+
+  <div class="social-join">
+    <p>أو انضم الآن بواسطة:</p>
+    <button class="google-btn">Google</button>
+    <button class="apple-btn">Apple</button>
+     
+            
+ </div>
+    </form>
+</main>
+     <footer class="footer-map-toggle">
+  
+ 
+
+ 
+<div id="map-section" style="display: none; margin-bottom: 120px; text-align: center; position: relative;">
+  <!-- زر الإغلاق -->
+  <button id="close-map-btn" aria-label="إغلاق" style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d40000;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  ">×</button> 
+
+  <!-- الخريطة -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=..."
+    width="90%"
+    height="300"
+    style="border:0; border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  <div class="footer-info">
+    <p>© 2025 الاتحاد الدولي للصليب الأحمر</p>
+    <p><i class="fa-solid fa-envelope"></i> info@ifrc.org</p>
+    <p><i class="fa-solid fa-phone"></i> +967 777 777 777</p>
+    <p><i class="fa-solid fa-location-dot"></i> تعز، اليمن</p>
+  </div>
+
+  <button id="map-toggle-btn" aria-label="عرض الخريطة">
+    <img src="/assets/images/map-icon.png" alt="أيقونة خريطة" id="map-icon" />
+  </button>
+</footer>
+
+
+
+<script src="/js/login.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
