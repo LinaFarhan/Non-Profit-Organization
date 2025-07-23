@@ -1,0 +1,176 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا|انضنم الينا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/theme.css">
+   <link rel="stylesheet" href="/css/contact.css">
+
+</head>
+<body><nav class="navbar">
+  <div class="logo">
+    <img src=" \assets\images\logo.png" alt="IFRC Logo"/>
+  </div>
+
+<ul class="nav-links">
+
+     </li>
+    <li class="nav-item">
+    <button class="nav-toggle">  | الرئيسية<i class="fa fa-chevron-down"></i></button>
+    <ul class="dropdown">
+      <li><a href="\home.html">الصفحة الرئيسية</a> </li>
+        
+    </ul>
+
+  </li>
+ <li class="nav-item">
+    <button class="nav-toggle">| عن المنظمة<i class="fa fa-chevron-down"></i></button>
+  
+    <ul class="dropdown">
+      <li><a href="about.html"> من نحن </a> </li>
+       <li><a href="about.html#about-messg">الأهداف |الرؤية</a></li>
+      <li><a href="about.html#about-goal">استراتيجية</a></li> 
+       
+    </ul>
+
+  </li>
+
+ <!-- ...... -->
+       <li class="nav-item">
+    <button class="nav-toggle"> |  يحدث الان <i class="fa fa-chevron-down"></i></button>
+    <ul class="dropdown">
+      <li><a href="News.html">  اخبارنا</a> </li>
+       <li><a href="emergencyappeals.html"> نداءات  الطوارئ</a></li>       
+      
+    </ul>
+  </li>
+    <li class="nav-item">
+    <button class="nav-toggle">تواصل معنا | انضموا الينا <i class="fa fa-chevron-down"></i></button>
+    <ul class="dropdown">
+      <li><a href="contact.html">  شاركوا معنا</a> </li>
+       <li><a href="login.html">   تسجيل الدخول </a></li>       
+      
+    </ul>
+
+  </li>
+
+ 
+   </li>
+    <li class="nav-item">
+    <button class="nav-toggle"> | المشاريع<i class="fa fa-chevron-down"></i></button>
+    <ul class="dropdown">
+      <li><a href="healthcare.html">الصحة والرعاية</a> </li>
+       <li><a href="learn.html">   التعليم</a></li>       
+      
+    </ul>
+
+  </li>
+  <!--  -->
+
+    
+</ul>
+ 
+ 
+
+
+  <div class="nav-actions">
+    <select class="lang">
+      <option>العربية</option>
+      <option>English</option>
+    </select>
+    <button class="search"><i class="fa fa-search"></i></button>|
+    <button class="notifications"><i class="fa fa-bell"></i></button>|
+    <button class="donate" >تبرعوا <i class="fa fa-heart"></i></button>
+  </div>
+</nav>
+ 
+<main>
+ <section id="connect-us" class="contact-section">
+  <h2>تواصل معنا</h2>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <p>📍 تعز، اليمن</p>
+      <p>📞 123-456-789</p>
+      <p>📧 info@example.com</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="اسمك" required>
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك..." required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+</section>
+
+
+<div class="red-cross-image"   >
+  <img src="/assets/images/contactt.jpeg" alt="الصليب الأحمر - دعم إنساني">
+</div>
+
+
+
+</main>
+
+<button id="back-btn" class="back-button">
+  <i class="fa fa-arrow-right"></i> رجوع إلى الصفحة السابقة
+</button>
+
+     <footer class="footer-map-toggle">
+
+<div id="map-section" style="display: none; margin-bottom: 120px; text-align: center; position: relative;">
+  <!-- زر الإغلاق -->
+  <button id="close-map-btn" aria-label="إغلاق" style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d40000;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  ">×</button> 
+
+ 
+  <iframe
+    src="https://www.google.com/maps/embed?pb=..."
+    width="90%"
+    height="300"
+    style="border:0; border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  <div class="footer-info">
+    <p>© 2025 الاتحاد الدولي للصليب الأحمر</p>
+    <p><i class="fa-solid fa-envelope"></i> info@ifrc.org</p>
+    <p><i class="fa-solid fa-phone"></i> +967 777 777 777</p>
+    <p><i class="fa-solid fa-location-dot"></i> تعز، اليمن</p>
+  </div>
+
+  <button id="map-toggle-btn" aria-label="عرض الخريطة">
+    <img src="/assets/images/map-icon.png" alt="أيقونة خريطة" id="map-icon" />
+  </button>
+</footer>
+
+
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/backbutton.js"></script>
+<script src="/js/contact.js"></script>
+
+
+</body>
+</html>
