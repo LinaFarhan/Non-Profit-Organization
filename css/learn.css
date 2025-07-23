@@ -1,0 +1,76 @@
+.education-hero {
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+  direction: rtl;
+  font-family: var(--font-main);
+}
+
+.page-hero__image {
+  background-image: url("/assets/images/learn.jpeg"); /* ← ضعي هنا مسار الصورة */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  height: 100%;
+  width: 100%;
+  margin-top: 130px;
+}
+ 
+ .hero-overlay {
+  position: absolute;  
+  bottom: 10%;
+  right: 5%;
+  left: 5%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: right;
+  z-index: 2;
+}
+
+
+.hero-overlay h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top:50px;
+  font-weight: bold;
+  color: rgb(221, 7, 7);
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  line-height: 1.7px;
+  margin-bottom:  0px;
+   font-weight: bold;
+}
+ @media (max-width: 768px) {
+  .education-hero {
+    height: 50vh;    
+    padding: 20px 10px;
+  }
+
+  .page-hero__image {
+    margin-top: 90px;  
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
